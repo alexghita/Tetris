@@ -1,0 +1,15 @@
+LIBDIRS= -framework GLUT -framework OpenGL
+LDLIBS = -lobjc -lm
+
+CPPFLAGS= -Wno-deprecated
+LDFLAGS= $(LIBDIRS)
+
+TARGETS = coursework
+
+SRCS = coursework.cpp
+
+OBJS =  $(SRCS:.cpp=.o)
+
+CXX = g++
+
+default: $(TARGETS)
